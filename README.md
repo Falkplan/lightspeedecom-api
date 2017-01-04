@@ -9,13 +9,13 @@ Add dependency to maven:
 dependency>
     <groupId>com.github.Falkplan</groupId>
     <artifactId>lightspeedecom-api</artifactId>
-    <version>v0.1.0</version>
+    <version>v1.0.0</version>
 </dependency>
 ~~~~
 or gradle:
 ~~~~
 dependencies {
-  compile 'com.github.Falkplan:lightspeedecom-api:v0.1.0'
+  compile 'com.github.Falkplan:lightspeedecom-api:v1.0.0'
 }
 ~~~~
 
