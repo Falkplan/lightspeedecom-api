@@ -1,7 +1,11 @@
 # lightspeedecom-api
 Java api client for the lightspeed ecommerce platform, based on http://developers.lightspeedhq.com/ecom/
 
+
 ## install
+[![Release](https://jitpack.io/v/Falkplan/lightspeedecom-api.svg)]
+(https://jitpack.io/#Falkplan/lightspeedecom-api)
+
 Add jitpack.io repository: https://jitpack.io/
 
 Add dependency to maven:
