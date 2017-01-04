@@ -3,8 +3,8 @@ Java api client for the lightspeed ecommerce platform, based on http://developer
 
 
 ## install
-[![Release](https://jitpack.io/v/Falkplan/lightspeedecom-api.svg)]
-(https://jitpack.io/#Falkplan/lightspeedecom-api)
+[![Release](https://jitpack.io/v/falkplan/lightspeedecom-api.svg)]
+(https://jitpack.io/#falkplan/lightspeedecom-api)
 
 Add jitpack.io repository: https://jitpack.io/
 
