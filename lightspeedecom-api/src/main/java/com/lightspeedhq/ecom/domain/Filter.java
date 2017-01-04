@@ -18,7 +18,7 @@ import lombok.Getter;
 @JsonRootName("filter")
 public class Filter implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("filters")
     public static class List extends ArrayList<Filter> {

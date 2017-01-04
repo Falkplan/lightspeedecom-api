@@ -16,7 +16,7 @@ import lombok.Getter;
 @JsonRootName("accountRatelimit")
 public class AccountRatelimit implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     /**
      * Rate limit for a time unit.

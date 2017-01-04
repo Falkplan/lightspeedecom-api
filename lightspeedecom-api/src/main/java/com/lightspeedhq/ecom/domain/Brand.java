@@ -20,7 +20,7 @@ import lombok.Getter;
 @JsonRootName("brand")
 public class Brand implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("brands")
     public static class List extends ArrayList<Brand> {

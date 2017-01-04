@@ -25,7 +25,7 @@ import lombok.Setter;
 @JsonIgnoreProperties({"groups", "invoices", "orders", "reviews", "shipments", "tickets", "metafields", "login"})
 public class Customer implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("customers")
     public static class List extends ArrayList<Customer> {

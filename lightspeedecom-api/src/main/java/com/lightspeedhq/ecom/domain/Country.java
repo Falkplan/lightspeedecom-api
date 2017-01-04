@@ -11,7 +11,7 @@ import lombok.Getter;
 //@JsonRootName("country")
 public class Country implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @Getter
     private int id;

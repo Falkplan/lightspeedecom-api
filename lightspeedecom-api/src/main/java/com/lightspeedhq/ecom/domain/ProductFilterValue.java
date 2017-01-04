@@ -3,10 +3,10 @@ package com.lightspeedhq.ecom.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 import java.io.Serializable;
 import java.util.ArrayList;
 import lombok.Getter;
-import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 
 /**
  * ProductFilterValues are links between products, filters and their values.
@@ -18,7 +18,7 @@ import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 @JsonRootName("productFilterValue")
 public class ProductFilterValue implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("productFiltervalue")//should be productFiltervalues (probably a bug), may be fixed later...
     public static class List extends ArrayList<ProductFilterValue> {

@@ -17,7 +17,7 @@ import lombok.Getter;
 @JsonRootName("supplier")
 public class Supplier implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @Getter
     private int id;

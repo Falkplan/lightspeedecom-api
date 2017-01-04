@@ -14,7 +14,7 @@ import lombok.Getter;
 @JsonRootName("productAttribute")
 public class ProductAttribute implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("productAttributes")
     public static class List extends ArrayList<ProductAttribute> {

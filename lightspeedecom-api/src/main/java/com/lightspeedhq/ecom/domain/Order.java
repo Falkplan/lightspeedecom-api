@@ -29,7 +29,7 @@ import lombok.Setter;
 @JsonRootName("order")
 public class Order implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("orders")
     public static class List extends ArrayList<Order> {

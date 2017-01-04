@@ -3,11 +3,11 @@ package com.lightspeedhq.ecom.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 import lombok.Getter;
-import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 
 /**
  * This resource manages the relationship between the categories and the products.
@@ -18,7 +18,7 @@ import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 @JsonRootName("categoriesProduct")
 public class CategoriesProduct implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("categoriesProducts")
     public static class List extends ArrayList<CategoriesProduct> {

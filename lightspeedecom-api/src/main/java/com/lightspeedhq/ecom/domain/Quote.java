@@ -24,7 +24,7 @@ import lombok.Getter;
 @JsonIgnoreProperties({"products", "shippingmethods", "paymentmethods", "shipmentData"})
 public class Quote implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("quotes")
     public static class List extends ArrayList<Quote> {

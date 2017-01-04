@@ -23,7 +23,7 @@ import org.apache.commons.lang.StringUtils;
 @JsonRootName("variant")
 public class Variant implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("variants")
     public static class List extends ArrayList<Variant> {

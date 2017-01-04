@@ -17,7 +17,7 @@ import lombok.Getter;
 @JsonRootName("attribute")
 public class Attribute implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     /**
      * The unique numeric identifier for the attribute.<br/>

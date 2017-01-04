@@ -18,7 +18,7 @@ import lombok.Getter;
 @JsonRootName("customerToken")
 public class CustomerToken implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     public static final int EXPIRESIN_DEFAULT = 60;
 

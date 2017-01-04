@@ -22,7 +22,7 @@ import lombok.Setter;
 @JsonRootName("webhook")
 public class Webhook implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("webhooks")
     public static class List extends ArrayList<Webhook> {

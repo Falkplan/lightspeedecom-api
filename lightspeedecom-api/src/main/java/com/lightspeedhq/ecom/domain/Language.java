@@ -15,7 +15,7 @@ import lombok.Getter;
 //@JsonRootName("language")
 public class Language implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("languages")
     public static class List extends ArrayList<Language> {

@@ -16,7 +16,7 @@ import lombok.Getter;
 @JsonRootName(value = "deliverydate")
 public class Deliverydate implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     /**
      * The unique numeric identifier for the deliverydate.<br/>

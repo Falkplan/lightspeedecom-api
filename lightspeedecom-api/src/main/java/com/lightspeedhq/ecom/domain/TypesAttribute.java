@@ -3,10 +3,10 @@ package com.lightspeedhq.ecom.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 import java.io.Serializable;
 import java.util.ArrayList;
 import lombok.Getter;
-import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 
 /**
  * Attributes belong to a type, also referred to as a specification. An attribute could be for example the Dimensions or Color of a product.
@@ -18,7 +18,7 @@ import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 @JsonRootName("typeAttribute")
 public class TypesAttribute implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     @JsonRootName("typesAttributes")
     public static class List extends ArrayList<TypesAttribute> {
