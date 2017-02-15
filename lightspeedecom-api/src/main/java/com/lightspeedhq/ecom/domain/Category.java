@@ -3,6 +3,7 @@ package com.lightspeedhq.ecom.domain;
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.lightspeedhq.ecom.LightspeedEComClient;
+import com.lightspeedhq.ecom.jackson.FalseNullDeserializer;
 import com.lightspeedhq.ecom.jackson.ResourceIdDeserializer;
 import java.io.Serializable;
 import java.time.ZonedDateTime;
@@ -142,6 +143,7 @@ public class Category implements Serializable {
      * An image for this category.
      */
     @Getter
+    @JsonDeserialize(using = FalseNullDeserializer.class)
     private Image image;
 
     /**
