@@ -1,6 +1,5 @@
 package com.lightspeedhq.ecom.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import java.io.Serializable;
 import lombok.Getter;
@@ -13,7 +12,6 @@ import lombok.Getter;
  * @see <a href="http://developers.seoshop.com/api/resources/type">http://developers.seoshop.com/api/resources/type</a>
  * @author stevensnoeijen
  */
-@JsonIgnoreProperties({"attributes"})
 @JsonRootName("type")
 public class Type implements Serializable {
 

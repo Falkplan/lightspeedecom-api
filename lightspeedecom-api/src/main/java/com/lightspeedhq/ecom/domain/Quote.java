@@ -1,7 +1,6 @@
 package com.lightspeedhq.ecom.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -21,7 +20,6 @@ import lombok.Getter;
  * @author stevensnoeijen
  */
 @JsonRootName(value = "quote")
-@JsonIgnoreProperties({"products", "shippingmethods", "paymentmethods", "shipmentData"})
 public class Quote implements Serializable {
 
     private static final long serialVersionUID = 2L;

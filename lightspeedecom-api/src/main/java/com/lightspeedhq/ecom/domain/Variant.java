@@ -19,7 +19,6 @@ import org.apache.commons.lang.StringUtils;
  * @see <a href="http://developers.lightspeedhq.com/ecom/endpoints/variant/">http://developers.lightspeedhq.com/ecom/endpoints/variant/</a>
  * @author stevensnoeijen
  */
-@JsonIgnoreProperties({"options", "movements", "metafields", "additionalcost", "image", "stockBuyMininum", "taxType"})
 @JsonRootName("variant")
 public class Variant implements Serializable {
 

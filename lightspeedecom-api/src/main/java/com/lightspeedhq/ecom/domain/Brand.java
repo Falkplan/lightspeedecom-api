@@ -1,7 +1,6 @@
 package com.lightspeedhq.ecom.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.lightspeedhq.ecom.LightspeedEComClient;
@@ -16,7 +15,6 @@ import lombok.Getter;
  * @see <a href="http://developers.seoshop.com/api/resources/brand">http://developers.seoshop.com/api/resources/brand</a>
  * @author stevensnoeijen
  */
-@JsonIgnoreProperties({"products"})
 @JsonRootName("brand")
 public class Brand implements Serializable {
 

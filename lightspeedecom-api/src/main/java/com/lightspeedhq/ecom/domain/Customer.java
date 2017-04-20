@@ -1,6 +1,9 @@
 package com.lightspeedhq.ecom.domain;
 
-import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
@@ -22,7 +25,6 @@ import lombok.Setter;
  * @author stevensnoeijen
  */
 @JsonRootName("customer")
-@JsonIgnoreProperties({"groups", "invoices", "orders", "reviews", "shipments", "tickets", "metafields", "login"})
 public class Customer implements Serializable {
 
     private static final long serialVersionUID = 2L;

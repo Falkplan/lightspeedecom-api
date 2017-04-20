@@ -16,8 +16,6 @@ import lombok.Getter;
  * @see <a href="http://developers.seoshop.com/api/resources/product">http://developers.seoshop.com/api/resources/product</a>
  * @author stevensnoeijen
  */
-@JsonIgnoreProperties({"categories", "images", "relations",
-    "metafields", "reviews", "attributes", "supplier", "tags", "variants", "movements", "set"})
 @JsonRootName("product")
 public class Product implements Serializable {
 

@@ -24,8 +24,6 @@ import lombok.Setter;
  * @author stevensnoeijen
  * @see <a href="http://developers.seoshop.com/api/resources/order">http://developers.seoshop.com/api/resources/order</a>
  */
-@JsonIgnoreProperties({"paymentTaxRates", "shipmentTaxRates", "taxRates", "invoices",
-    "shipments", "products", "metafields", "quote", "events"})
 @JsonRootName("order")
 public class Order implements Serializable {
 

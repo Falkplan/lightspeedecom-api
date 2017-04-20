@@ -95,6 +95,7 @@ public class LightspeedEComClientBuilder {
         ObjectMapper om = new ObjectMapper();
         om.configure(SerializationFeature.WRAP_ROOT_VALUE, true);
         om.configure(DeserializationFeature.UNWRAP_ROOT_VALUE, true);
+        om.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         //for using zoneddatetime JsonFormat
         om.registerModule(new JSR310Module());
         om.setTimeZone(TimeZone.getTimeZone("UTC"));
