@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
+## [v1.0.3] - 2017-04-20
+### Changed
+- changed JsonIgnoreProperties set per entity to ObjectMapper configure FAIL_ON_UNKNOWN_PROPERTIES
+
+### Fixed
+- category unknown property error
+
 ## [v1.0.2] - 2017-02-15
 ### Changed
 - add skip test on build/run etc
