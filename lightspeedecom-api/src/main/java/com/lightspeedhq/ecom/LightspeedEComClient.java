@@ -244,6 +244,80 @@ public interface LightspeedEComClient {
     public Customer getCustomer(@Param("customer-id") int customerId);
 
     /**
+     * All groups with customers<br/>
+     * Retrieve a list of all customers that have been placed in groups.
+     *
+     * @param filters that can be "group" or "customer"
+     *
+     * @return list of groupcustomers by filters
+     *
+     * @see <a href="http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/">http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/</a>
+     */
+    @RequestLine("GET /groups/customers.json")
+    public GroupCustomer.List getGroupsCustomers(@QueryMap Map<String, Object> filters);
+
+    /**
+     * All groups with customers<br/>
+     * Retrieve a list of all customers that have been placed in groups.
+     *
+     * @return list of groupcustomers
+     *
+     * @see <a href="http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/">http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/</a>
+     */
+    public default GroupCustomer.List getGroupsCustomers() {
+        return getGroupsCustomers(Collections.emptyMap());
+    }
+
+    /**
+     * Number of group customers<br/>
+     * Retrieve the total number of group customers from this shop.
+     *
+     * @return object with count
+     *
+     * @see <a href="http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/">http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/</a>
+     */
+    @RequestLine("GET /groups/customers/count.json")
+    public Count getGroupsCustomersCount();
+
+    /**
+     * Retrieve a single group customers<br/>
+     * Retrieve a single group customers based on the unique identifier.
+     *
+     * @param groupsCustomerId to get
+     *
+     * @return groupscustomer of id
+     *
+     * @see <a href="http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/">http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/</a>
+     */
+    @RequestLine("GET /groups/customers/{groupsCustomer-id}.json")
+    public GroupCustomer getGroupCustomer(@Param("groupsCustomer-id") int groupsCustomerId);
+
+
+    /**
+     * Add a customer to a group based on the given parameters.<br>
+     *
+     * @param groupsCustomer that contains group and customer-id to add a groupcustomer by
+     *
+     * @return the created {@link com.lightspeedhq.ecom.domain.Customer}
+     *
+     * @see <a href="http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/">http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/</a>
+     */
+    @RequestLine("POST /groups/customers.json")
+    public GroupCustomer addGroupCustomer(CreateGroupCustomer groupsCustomer);
+
+    /**
+     * Delete an existing group customer relationship based on the unique identifier.<br>
+     *
+     * @param groupsCustomerId id by group and customer-id
+     *
+     * @return the created {@link com.lightspeedhq.ecom.domain.Customer}
+     *
+     * @see <a href="http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/">http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/</a>
+     */
+    @RequestLine("DELETE /groups/customers/{groupsCustomer-id}.json")
+    public void removeGroupCustomer(@Param("groupsCustomer-id") int groupsCustomerId);
+
+    /**
      * Find customer by email.
      *
      * @param filters as 'email'
