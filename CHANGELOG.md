@@ -1,8 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/) 
+The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
+
+## [v1.1.0] - 2018-04-12
+### Added
+-  lightspeed GroupCustomer functions in LightspeedEComClient and tested all these new methods
+
+### Changed
+- removed mockbin and insequence (bad practice)
 
 ## [v1.0.3] - 2017-04-20
 ### Changed

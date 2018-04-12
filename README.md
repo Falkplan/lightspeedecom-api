@@ -53,6 +53,12 @@ The client supports the following methods:
   - getCustomers
   - updateCustomer
   - removeCustomer
+- [GroupsCustomer](http://developers.lightspeedhq.com/ecom/endpoints/groupscustomer/)
+  - getGroupsCustomers
+  - getGroupsCustomersCount
+  - getGroupCustomer
+  - addGroupCustomer
+  - removeGroupCustomer
 - [Deliverydate](http://developers.lightspeedhq.com/ecom/endpoints/deliverydate/)
   - getDeliverydate
 - [Filters](http://developers.lightspeedhq.com/ecom/endpoints/filter/)
